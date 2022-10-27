@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='CSS/contactstyle.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'><!-This is the font of the website provided by Google.->
+	<title>Moral & Ethical Issues Concerning the use of Computer Technology</title>
+</head>
+
+<body>	
+	<div id = 'image'><!-This div is for the parallax effect.->
+		<div class = 'image-text'><!-Div is so there is text on the image for the title of the page.->
+		<h1 style = 'font-size: 50px'>Contact</h1>
+		</div>
+	</div>
+	
+	<div id = 'topnav'><!-The top navigation bar.->
+		<b onclick = 'openNav()'>&#9776;</b><!-Menu icon->
+		<a href = '#formbox'><img style='float:right;padding-right:50px;padding-top:1%;'src='formicon.png',width='50'height='50'></a>
+	</div>
+	
+	<div id = 'sidenav' class = 'side-nav'><!-Side navigation.->
+		<a href = 'javascript:void(0)'style='color:#fbc334;text-align:center;font-size:200%;'class='closebtn'onclick='closeNav()'>&times;</a><!-Close button.->
+		<a href = 'index.html'>General information</a></li>
+		<a href = 'work.html'>Computers In The Workforce</a>
+		<a href = 'auto.html'>Automated Decision Making</a>
+		<a href = 'ai.html'>Artificial Intelligence</a>
+		<a href = 'environ.html'>Environmental Effects</a>
+		<a href = 'censor.html'>Censorship & The Internet</a>
+		<a href = 'monitor.html'>Monitoring Behaviour</a>
+		<a href = 'persinfo.html'>Analysis of Personal Information</a>
+		<a href = 'piroff.html'>Piracy & Offensive Communications</a>
+		<a href = 'ui.html'>User Interface Design Considerations</a>
+		<a href = '#formbox'onclick='closeNav()'>Contact</a>
+	</div>
+	
+	<div id='formbox'>
+		<h1>Contact us</h1>
+		<form name = 'enter'>
+			<label for='fname'>First Name</label>
+			<input type='text' id='fname' name='firstname'placeholder='Your name..'>
+
+			<label for='lname'>Last Name</label>
+			<input type='text' id='lname' name='lastname'placeholder='Your last name..'>
+			
+			<label for='email'>Email</label>
+			<input type='email' id='email' name='mail'placeholder='Eg. someone@example.co.uk'>
+			
+			<label for='subject'>Subject</label>
+			<input type='text' id='subject' name='sbj'style='height:100px'placeholder='Write something..'>
+			
+			<a href='#formbox'><input type='submit'value='Submit'onclick='validate()'></a>
+		</form>
+	</div>
+	
+	<div id = 'bbar'></div>
+	
+	<script>
+		function openNav() {
+			document.getElementById('sidenav').style.width = '100%';
+		}
+		function closeNav() {
+			document.getElementById('sidenav').style.width = '0';
+		}
+		window.onscroll = function() {scrollFunction()}//When the user scrolls down the size of the image, the nav bar pops up.
+		function scrollFunction() {
+			if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+				document.getElementById('topnav').style = 'opacity:0.6;background-color:#222;box-shadow: 0 10px 8px 2px #888888';
+			} else{
+				document.getElementById('topnav').style = 'opacity:1';
+				document.getElementById('topnav').style = 'box-shadow:0';
+			}
+		}
+		function validate() {
+			var x = document.forms['enter']['firstname'].value;
+			var y = document.forms['enter']['lastname'].value;
+			var z = document.forms['enter']['mail'].value;
+			var k = document.forms['enter']['sbj'].value;
+			if (x == '') {
+				alert('Please enter your first name.');
+			} else if (y == ''){
+				alert('Please enter your last name.');
+			} else if (z == ''){
+				alert('Please enter your email.');
+			} else if (k == ''){
+				alert('Please enter a subject.');
+			} else{
+				alert('Thank you for the feedback!');
+			}
+		}
+	</script>
+	
+</body>
+</html>

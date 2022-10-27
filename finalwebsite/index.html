@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='CSS/gistyle.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'><!-This is the font of the website provided by Google.->
+	<title>Moral & Ethical Issues Concerning the use of Computer Technology</title>
+</head>
+
+<body>	
+	<div id = 'image'><!-This div is for the parallax effect.->
+		<div class = 'image-text'><!-Div is so there is text on the image for the title of the page.->
+		<h1 style = 'font-size: 50px'>Moral & Ethical Issues Concerning the use of Computer Technology</h1>
+		</div>
+	</div>
+	
+	<div id = 'topnav'><!-The top navigation bar.->
+		<b onclick = 'openNav()'>&#9776;</b><!-Menu icon and when pressed the menu will open.->
+		<a href = '#fbox'><img style='float:right;padding-right:50px;padding-top:1%;'src='formicon.png',width='50'height='50'></a><!-The image used for the form, that redirects to the contact form on this page.->
+	</div>
+	
+	<div id = 'main'><!-This is where all the main content goes.->
+		<div id = 'right-column'><!-The main is split into 2 columns, right and left.->
+			<iframe width='600'height='400'src='https://youtube.com/embed/pE5sF9SrnSI'></iframe><!-Using iframe here to implement an embed YouTube video.->
+		</div>
+	
+		<h1>General Information</h1>
+		<p>
+			As the world is constantly evolving, technology is forever changing and we are presented with the moral and ethical issues
+			that concern every individual that is of use of technology. The number of people that are exposed to computers is growing,
+			and the younger generations are wide open to various machines. The area of computer technology is one that is difficult to
+			assign a specific set of moral codes, although it is necessary that ethics be considered when making decisions in this area.
+			Computing creates a whole new set of ethical problems, unique for itself.
+		</p>
+			<br>Points that we need to consider:
+			<ul>
+				<li>Security of data</li>
+				<li>Ensuring public safety</li>
+				<li>Computer misuse</li>
+				<li>Piracy</li>
+				<li>The environment</li>
+			</ul>
+		<h2>Security of data</h2>
+			<p>Now that the technological world is growing, data is highly sought after. Companies can use the data they gather,
+			whether it is behavioural or factual, to market products or services to people that they collect data from,
+			which ultimately benefits companies.
+			</p>
+		<h2>Ensuring public safety</h2>
+			<p>Public safety can be tied to data security, but a majority of this subject is the act of cyber-bullying and hacking.
+			Anywhere in the world, safety is at risk and whoever is of use of a computer needs to take precaution.</p>
+		<h2>Computer misuse</h2>
+			<p>The misuse of computers is an illegal act and many people are in danger to this. This can include computer hacking,
+			uploading malware or phishing. The list is long, but we need to be informed in how to recognise the misuse of 
+			computers and how to counter it.</p>
+		<h2>Piracy</h2>
+			<p>Media is forever expanding and it is vulnerable to piracy. Piracy is the unauthorised use of another person’s work.
+			This can include any sort of copying or distribution of illegitimate copies of software.</p>
+		<h2>The environment</h2>
+			<p>The world is everchanging and this means that Earth is at risk of global warming. Due to this, e-waste needs to be 
+			reduces to the minimum to protect and sustain Earth.</p>
+		<br>
+	</div>
+	
+	<div id = 'sidenav' class = 'side-nav'><!-Side navigation with all the pages linked by hyperlinks.->
+		<a href = 'javascript:void(0)'style='color:#c64284;text-align:center;font-size:200%;'class='closebtn'onclick='closeNav()'>&times;</a><!-Close button.->
+		<a href = '#main'onclick='closeNav()'>General information</a><!-As you are on the general information page already, by clicking it again on the menu, it will redirect to the main content. ->
+		<a href = 'work.html'>Computers In The Workforce</a>
+		<a href = 'auto.html'>Automated Decision Making</a>
+		<a href = 'ai.html'>Artificial Intelligence</a>
+		<a href = 'environ.html'>Environmental Effects</a>
+		<a href = 'censor.html'>Censorship & The Internet</a>
+		<a href = 'monitor.html'>Monitoring Behaviour</a>
+		<a href = 'persinfo.html'>Analysis of Personal Information</a>
+		<a href = 'piroff.html'>Piracy & Offensive Communications</a>
+		<a href = 'ui.html'>User Interface Design Considerations</a>
+		<a href = '#formbox'onclick='closeNav()'>Contact</a><!-Because there is a contact page on the GI page, clicking contact will redirect to the contact form on the GI page.->
+	</div>
+	
+	<div id = 'formbox'><!-The container for the contact section.->
+		<h1>Contact us</h1>
+		<a id='fbox'><form name = 'enter'></a><!-There is an a tag here so when clicking the form image and contact in the menu, it will redirect to here.->
+			<label for='fname'>First Name</label><!-Using the label tag so whenever you click on the label, it will enter you into the text box.->
+			<input type='text' id='fname' name='firstname'placeholder='Your name..'>
+
+			<label for='lname'>Last Name</label>
+			<input type='text' id='lname' name='lastname'placeholder='Your last name..'>
+			
+			<label for='email'>Email</label>
+			<input type='email' id='email' name='mail'placeholder='Eg. someone@example.co.uk'>
+			
+			<label for='subject'>Subject</label>
+			<input type='text' id='subject' name='sbj'style='height:100px'placeholder='Write something..'>
+			
+			<a href='#fbox'><input type='submit'value='Submit'onclick='validate()'></a><!-The submit button. It is surrounded in a tag so if you click on it, it will not redirect to the top of the page.->
+		</form>
+	</div>
+	
+	<div id = 'bbar'></div><!-The bbar div is the colour bar at the bottom of the page.->
+	
+	<script>//The JavaScript
+		function openNav() {//The function here is for the menu navigation. The function makes the sidenav extend to cover the whole screen.
+			document.getElementById('sidenav').style.width = '100%';
+		}
+		function closeNav() {//The function here is to close and hide the navigation.
+			document.getElementById('sidenav').style.width = '0';
+		}
+		window.onscroll = function() {scrollFunction()}//When the user scrolls down past 950, the nav bar pops up.
+		function scrollFunction() {
+			if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+				document.getElementById('topnav').style = 'opacity:0.6;background-color:#222;box-shadow: 0 10px 8px 2px #888888';//Changes made to the nav bar when the user scrolls down.
+			} else{
+				document.getElementById('topnav').style = 'opacity:1';//Changes made to the nav bar when the user scrolls up.
+				document.getElementById('topnav').style = 'box-shadow:0';
+			}
+		}
+		function validate() {//Validation of the contact form.
+			var x = document.forms['enter']['firstname'].value;
+			var y = document.forms['enter']['lastname'].value;
+			var z = document.forms['enter']['mail'].value;
+			var k = document.forms['enter']['sbj'].value;
+			if (x == '') {
+				alert('Please enter your first name.');
+			} else if (y == ''){
+				alert('Please enter your last name.');
+			} else if (z == ''){
+				alert('Please enter your email.');
+			} else if (k == ''){
+				alert('Please enter a subject.');
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='CSS/environstyle.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'><!-This is the font of the website provided by Google.->
+	<title>Moral & Ethical Issues Concerning the use of Computer Technology</title>
+</head>
+
+<body>	
+	<div id = 'image'><!-This div is for the parallax effect.->
+		<div class = 'image-text'><!-Div is so there is text on the image for the title of the page.->
+		<h1 style = 'font-size: 50px'>Environmental Effects</h1>
+		</div>
+	</div>
+	
+	<div id = 'topnav'><!-The top navigation bar.->
+		<b onclick = 'openNav()'>&#9776;</b><!-Menu icon->
+		<a href = 'contact.html'><img style='float:right;padding-right:50px;padding-top:1%;'src='formicon.png',width='50'height='50'></a><!-The image used for the form->
+	</div>
+	
+	<div id = 'main'><!-This is where all the main content goes.->
+		<div id = 'right-column'>
+		<iframe width="800" height="500" src="https://www.youtube.com/embed/vufLW4xOsS4"></iframe><!-Using iframe here to implement an embed YouTube video.->
+		<h1 style='padding-top:5%'>Key Facts</h1>
+			<ul>
+				<li>We generate around 40 million tons of electronic waste every year, worldwide. That’s like throwing
+				800 laptops every second.</li>
+				<li>E-waste comprises 70% of our overall toxic waste.</li>
+				<li>An average cellphone user replaces their unit once every 18 months.</li>
+				<li>Only 12.5% of E-Waste is recycled.</li>
+				<li>85% of our E-Waste are sent to landfills and incinerators are mostly burned, and release harmful 
+				toxins in the air!</li>
+				<li>80% of E-Waste in the US and most of other countries are transported to Asia.</li>
+				<li>300 million computers and 1 billion cellphones go into production annually. 
+				It is expected to grow by 8% per year.</li>
+				<li>E-waste contains hundreds of substances, of which many are toxic. This includes mercury, lead,
+				arsenic, cadmium, selenium, chromium, and flame retardants.</li>
+			</ul>
+		</div>
+		<h1>What is E-Waste</h1>
+			<p>
+			Electronic waste or e-waste, is a popular, informal name for electronic products nearing the end of their "useful life"
+			in which they are discarded. Used electronics that are refurbished, reused or recycled are also classed as e-waste. 
+			Electronic scrap components such as CPUs, contain harzardous materials such as lead, beryillium, or cadmium and are
+			potentially harmful to humans. 
+			</p>
+		<h1>Is E-waste Bad?</h1>
+			<p>Many of our E-Waste end up in Asia or Africa landfills. The recycling method in these landfills is not exactly 
+			the “recycling” that we have in mind. E-Waste is bad, for everyone, for our planet and most especially for the 
+			workers on the landfills. They are the ones that are hugely exposed to the toxicity from the e-waste, and are 
+			greatly at risk.
+			</p>
+			<p>
+			E-Wastes are buried or incinerated in landfills where their toxins pollute our land, air and water. Most of the time, 
+			they are sent to developing countries where workers extract the precious metals from the discarded electronics.
+			</p>
+			<p>
+			Workers on E-Waste sites are paid an average of $1.50 per day. They are unprotected while working with the toxic 
+			substances on the site. They are the first to inhale the toxins that are released in the air when electronic parts 
+			are burned. Many of these workers are children!
+			</p>
+		<h1>Why we should recycle Electronics</h1>
+			<p>Cellphones and other electronic devices contain precious metals like gold and silver. The US alone throws away 
+			cellphones with $60 million worth of gold/silver yearly.
+			</p>
+			<p>
+			Recycling 1 million laptops saves energy equivalent to the energy used by 3600 homes in the US annually.
+			<br><br>
+			Most of the components of E-Waste are electronic equipments that can be re-used and recycled for materials recovery.
+			</p>
+	</div>
+	
+	<div id = 'bottom'>
+		<h1>What can we do about our personal E-Waste?</h1>
+			<p>There are several options when it comes to the proper disposal of your electronic devices.
+			</p>
+			<p>Your old cellphone can still be used by another person. Same with your old computer or television. Donate it to friends, 
+			charities or community outreach programs - even to a stranger! This is better than the hazardous e-waste materials ending 
+			up in a landfill somewhere.
+			</p>
+			Find a Certified E-Waste Recycler. Those who are not certified will just send it off somewhere else where it can do its damage.
+			<p>
+			Here is a video about what to do when recycling electronics.
+			</p>
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/fyuxWDkLdcI"></iframe>
+	</div>
+	
+	<div id = 'bbar'></div>
+	
+	<div id = 'sidenav' class = 'side-nav'><!-Side navigation.->
+		<a href = 'javascript:void(0)'style='color:#e18c6f;text-align:center;font-size:200%;'class='closebtn'onclick='closeNav()'>&times;</a><!-Close button.->
+		<a href = 'index.html'>General information</a></li>
+		<a href = 'work.html'>Computers In The Workforce</a>
+		<a href = 'auto.html'>Automated Decision Making</a>
+		<a href = 'ai.html'>Artificial Intelligence</a>
+		<a href = '#main'onclick='closeNav()'>Environmental Effects</a>
+		<a href = 'censor.html'>Censorship & The Internet</a>
+		<a href = 'monitor.html'>Monitoring Behaviour</a>
+		<a href = 'persinfo.html'>Analysis of Personal Information</a>
+		<a href = 'piroff.html'>Piracy & Offensive Communications</a>
+		<a href = 'ui.html'>User Interface Design Considerations</a>
+		<a href = 'contact.html'>Contact</a>
+	</div>
+	
+	<script>
+		function openNav() {
+			document.getElementById('sidenav').style.width = '100%';
+		}
+		function closeNav() {
+			document.getElementById('sidenav').style.width = '0';
+		}
+		window.onscroll = function() {scrollFunction()}//When the user scrolls down the size of the image, the nav bar pops up.
+		function scrollFunction() {
+			if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+				document.getElementById('topnav').style = 'opacity:0.6;background-color:#222;box-shadow: 0 10px 8px 2px #888888';
+			} else{
+				document.getElementById('topnav').style = 'opacity:1';
+				document.getElementById('topnav').style = 'box-shadow:0';
+			}
+		}
+	</script>
+	
+</body>
+</html>

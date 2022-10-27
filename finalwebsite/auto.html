@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='CSS/autostyle.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'><!-This is the font of the website provided by Google.->
+	<title>Moral & Ethical Issues Concerning the use of Computer Technology</title>
+</head>
+
+<body>	
+	<div id = 'image'><!-This div is for the parallax effect.->
+		<div class = 'image-text'><!-Div is so there is text on the image for the title of the page.->
+		<h1 style = 'font-size: 50px'>Automated Decision Making</h1>
+		</div>
+	</div>
+	
+	<div id = 'topnav'><!-The top navigation bar.->
+		<b onclick = 'openNav()'>&#9776;</b><!-Menu icon->
+		<a href = 'contact.html'><img style='float:right;padding-right:50px;padding-top:1%;'src='formicon.png',width='50'height='50'></a><!-The image used for the form, that redirects to the contact page.->
+	</div>
+	
+	<div id = 'main'><!-This is where all the main content goes.->
+		<div id = 'right-column'>
+			<h2>Some Examples of Automated Decision Making</h2>
+				<ul>
+					<li>A factory worker’s pay is linked to their productivity, which is monitored automatically. The decision about how much
+					pay the worker receives for each shift they work is made automatically by referring to the data collected about their 
+					productivity.
+					<br><br>This is an example of solely automated decision making.</li>
+					<br><li>An employee is issued with a warning about late attendance at work. The warning was issued because the employer’s 
+					automated clocking-in system flagged the fact that the employee had been late on a defined number of occasions.</li>
+					<li>An individual applies for a loan online. The website uses algorithms and automated credit searching to provide 
+					an immediate yes/no decision on the application.</li>
+				</ul>
+				<br><h2>What does 'solely' automated mean?</h2>
+				<p>Solely means a decision-making process that is totally automated and excludes any human influence on the outcome. A process
+				might still be considered solely automated if a human inputs the data to be processed, and then the decision-making is carried
+				out by an automated system.
+				A process won’t be considered solely automated if someone weighs up and interprets the result of an automated decision before
+				applying it to the individual.</p>
+				<img width='700'height='460'src='auto2.jpg'>
+		</div>
+		<h1>Introduction</h1>
+			<p>
+			Automation is becoming a real thing in the world, with examples of automation in production. A growing field in automation is 
+			automated decision making, decisions solely made by computers. Despite automated decision making sounds rather risky, 
+			there is also a benefit to this. But also, there is ofcourse ethical and moral issues that concern this topic. Automated
+			decision making is an example of machine learning, where the computer learns with the data that they are given. 
+			</p>
+			<iframe width="800" height="450" src="https://www.youtube.com/embed/5KgQo0X4eXQ"></iframe><!-Using iframe here to implement an embed YouTube video.->
+		<h2>Profiling</h2>
+			<p>
+			Profiling analyses aspects of an individual’s personality, behaviour, interests and habits to make predictions or decisions about them.
+			This can be linked to automated decision making as a computer can do this to help with making decisions. 
+			<br><br>The GDPR(General Data Protection Regulation) defines profiling as:	
+			<br>‘profiling’ means any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal 
+			aspects relating to a natural person, in particular to analyse or predict aspects concerning that natural person's performance at work,
+			economic situation, health, personal preferences, interests, reliability, behaviour, location or movements.</p>
+		<h2>Benefits</h2>
+			<p>Profiling and automated decision making can be very useful for organisations and also benefit individuals in many sectors, including healthcare, education, 
+			financial services and marketing. They can lead to quicker and more consistent decisions, particularly in cases where a very large volume of data needs to
+			be analysed and decisions made very quickly.</p>
+		<h2>Risks</h2>
+			<ul>
+				<li>Profiling is often invisible to individuals.</li>
+				<li>People might not expect their personal information to be used in this way.</li>
+				<li>People might not understand how the process works or how it can affect them.</li>
+				<li>The decisions taken may lead to significant adverse effects for some people.</li>
+				<li>There could be a malfunciton in the decision making.</li>
+				<li>The decisions made could be wrong.</li>
+			</ul>
+	</div>
+
+	<div id = 'bottom'>.</div>	
+	<div id = 'bbar'></div>
+	
+	<div id = 'sidenav' class = 'side-nav'><!-Side navigation.->
+		<a href = 'javascript:void(0)'style='color:#b1b5b7;text-align:center;font-size:200%;'class='closebtn'onclick='closeNav()'>&times;</a><!-Close button.->
+		<a href = 'index.html'>General information</a></li>
+		<a href = 'work.html'>Computers In The Workforce</a>
+		<a href = '#main'onclick='closeNav()'>Automated Decision Making</a>
+		<a href = 'ai.html'>Artificial Intelligence</a>
+		<a href = 'environ.html'>Environmental Effects</a>
+		<a href = 'censor.html'>Censorship & The Internet</a>
+		<a href = 'monitor.html'>Monitoring Behaviour</a>
+		<a href = 'persinfo.html'>Analysis of Personal Information</a>
+		<a href = 'piroff.html'>Piracy & Offensive Communications</a>
+		<a href = 'ui.html'>User Interface Design Considerations</a>
+		<a href = 'contact.html'>Contact</a>
+	</div>
+	
+	<script>
+		function openNav() {
+			document.getElementById('sidenav').style.width = '100%';
+		}
+		function closeNav() {
+			document.getElementById('sidenav').style.width = '0';
+		}
+		window.onscroll = function() {scrollFunction()}//When the user scrolls down the size of the image, the nav bar pops up.
+		function scrollFunction() {
+			if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+				document.getElementById('topnav').style = 'opacity:0.6;background-color:#222;box-shadow: 0 10px 8px 2px #888888';
+			} else{
+				document.getElementById('topnav').style = 'opacity:1';
+				document.getElementById('topnav').style = 'box-shadow:0';
+			}
+		}
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='CSS/infostyle.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'><!-This is the font of the website provided by Google.->
+	<title>Moral & Ethical Issues Concerning the use of Computer Technology</title>
+</head>
+
+<body>	
+	<div id = 'image'><!-This div is for the parallax effect.->
+		<div class = 'image-text'><!-Div is so there is text on the image for the title of the page.->
+		<h1 style = 'font-size: 50px'>Analysis of Personal Information</h1>
+		</div>
+	</div>
+	
+	<div id = 'topnav'><!-The top navigation bar.->
+		<b onclick = 'openNav()'>&#9776;</b><!-Menu icon->
+		<a href = 'contact.html'><img style='float:right;padding-right:50px;padding-top:1%;'src='formicon.png',width='50'height='50'></a>
+	</div>
+	
+	<div id = 'main'><!-This is where all the main content goes.->
+		<div id = 'right-column'>
+			<h2>Cambridge Analytica</h2>
+				<iframe width="800" height="520" src="https://www.youtube.com/embed/VDR8qGmyEQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>This video here presents a prime example of how a company can use personal information of individuals,
+				and how it can greatly effect many in the world. The data Cambridge Analytica had was from Facebook and 
+				it was used to almost manipulate people with their decisions in the 2016 USA presidential election. 
+				They did this by targeting voter groups, eg. conservative or liberal. This was only disclosed to the public
+				in early 2018 and to add to this, executives of Cambridge Analytica said that they were working in more than 200 
+				elections around the world, including Trinidad and Tobago, Nigeria, the Czech Republic, and Argentina. This 
+				is quite clearly a vioaltion of privacy and the use of personal data collected without knowledge or permission 
+				to establish sophisticated models of user's personalities raises ethical and privacy issues.
+		</div>
+		<h1>Personal Data</h1>
+		<p>
+			The analysis of personal data has become a massive field in recent years. There have been a rise in 'big data' 
+			companies which specialise in performing large scale analysis on bulk data which is collected from various 
+			sources. To imagine the scale of the data about you, you must consider the sources from which is originates. 
+			Every like on social media, every check in on your phone, location data collected by your phones, every web 
+			search, every page you access and more. This only scratches the surface of the sources. There was a huge scandal 
+			of this back in 2018 where the company, 'Cambridge Analytica' used a plethora of personal information to skew 
+			peoples decisions in the 2016 presidential election.
+			</p>
+		<h2 style ='padding-top:2%;'>Our Privacy</h2>
+			<p>
+			Data has become a serious commodity which means that it is often sold between companies in order to make a 
+			profit. You can tend to see this happen when you suddenly get emails and communications from companies that 
+			you have never registered with. Selling data about people clearly shows that data is highly sought after, 
+			which raises the question about how reliant the future of technology will be on data. However, it is also used 
+			for good within governments to analyse crime hot spots and determine how best to protect citizens, but this 
+			doesn't resolve everything.
+			</p>
+	</div>
+	
+	<div id = 'bottom'>
+		<h1>Moral issues of Analysis of Personal Information</h1>
+			<p>When collecting data from individuals, clarification of this must be clear, otherwise, it is morally 
+			and ethically wrong to secretly gather information about people without telling them. With this being said, 
+			companies and businesses will still strive to collect data about people and it is only a matter of time whenever 
+			another scandal like Cambridge Analytica will happen. 
+			</p>
+			<p>
+			This video is an example of how companies will collect and gather information and data about people. 
+			In this example, it is about Facebooks data breach.
+			</p>
+		<iframe width="1280" height="720" src="https://www.youtube.com/embed/84gTofMPz1k"></iframe>
+	</div>
+	
+	<div id = 'bbar'></div>
+	
+	<div id = 'sidenav' class = 'side-nav'><!-Side navigation.->
+		<a href = 'javascript:void(0)'style='color:#065286;text-align:center;font-size:200%;'class='closebtn'onclick='closeNav()'>&times;</a><!-Close button.->
+		<a href = 'index.html'>General information</a></li>
+		<a href = 'work.html'>Computers In The Workforce</a>
+		<a href = 'auto.html'>Automated Decision Making</a>
+		<a href = 'ai.html'>Artificial Intelligence</a>
+		<a href = 'environ.html'>Environmental Effects</a>
+		<a href = 'censor.html'>Censorship & The Internet</a>
+		<a href = 'monitor.html'>Monitoring Behaviour</a>
+		<a href = '#main'onclick='closeNav()'>Analysis of Personal Information</a>
+		<a href = 'piroff.html'>Piracy & Offensive Communications</a>
+		<a href = 'ui.html'>User Interface Design Considerations</a>
+		<a href = 'contact.html'>Contact</a>
+	</div>
+	
+	<script>
+		function openNav() {
+			document.getElementById('sidenav').style.width = '100%';
+		}
+		function closeNav() {
+			document.getElementById('sidenav').style.width = '0';
+		}
+		window.onscroll = function() {scrollFunction()}//When the user scrolls down the size of the image, the nav bar pops up.
+		function scrollFunction() {
+			if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+				document.getElementById('topnav').style = 'opacity:0.6;background-color:#222;box-shadow: 0 10px 8px 2px #888888';
+			} else{
+				document.getElementById('topnav').style = 'opacity:1';
+				document.getElementById('topnav').style = 'box-shadow:0';
+			}
+		}
+	</script>
+</body>
+</html>

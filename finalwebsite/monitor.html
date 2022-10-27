@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='CSS/monitorstyle.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'><!-This is the font of the website provided by Google.->
+	<title>Moral & Ethical Issues Concerning the use of Computer Technology</title>
+</head>
+
+<body>	
+	<div id = 'image'><!-This div is for the parallax effect->
+		<div class = 'image-text'><!-Div is so there is text on the image for the title of the page.->
+		<h1 style = 'font-size: 50px'>Monitoring Behaviour</h1>
+		</div>
+	</div>
+	
+	<div id = 'topnav'><!-The top navigation bar.->
+		<b onclick = 'openNav()'>&#9776;</b><!-Menu icon->
+		<a href = 'contact.html'><img style='float:right;padding-right:50px;padding-top:1%;'src='formicon.png',width='50'height='50'></a>
+	</div>
+	
+	<div id = 'main'><!-This is where all the main content goes.->
+		<div id = 'right-column'>
+			<p>Here is a video about work monitoring in the workplace.
+			</p>
+			<iframe width="800" height="520" src="https://www.youtube.com/embed/yBmAtUWxCXU"></iframe><!-This video here is an introduction to censorship.->
+		</div>
+		<h1>Online Surveillance</h1>
+			<p>
+			Alongside censorship, online monitoring has become a very controversial topic in the recent years. This has raised 
+			serious questions and discussions about how much information we want recorded about us and to what extent what 
+			privacy we have online. Online surveillance poses a very different type of problem from the standard security camera on each corner 
+			approach as the internet is usually considered a vast and accessible domain. 
+			</p>
+			<p>
+			Despite this, monitoring behaviours isn't just about the internet. With technology evolving, there are many uses of 
+			surveillance. For example:
+			<ul>
+				<li>Logging systems in public spaces. Eg. in a library, in a school.</li>
+				<li>'Black boxes' installed into cars to improve the quality of driving for the trade of reduced prices.</li>
+				<li>Electronic tagging on ankles of criminals on house arrest.</li>
+			</ul>
+			</p>
+		<h2>Monitoring in the Workplace</h2>
+			<p>
+			Computers in the workplace need to be monitored, as to what is present on the screens on computers. However, 
+			recently there have been workplaces that request access to employees social media to review the content and to acknowledge 
+			what the employee is like on social media before hiring them.
+			</p>
+			<p>Many believe that this is a violation of privacy, as work lives should be seperate from personal lives. 
+			</p>
+	</div>
+	
+	<div id = 'bottom'>
+		<h1>The Effects of Monitoring Behaviour</h1>
+			<p>With the rise in these surveillance and monitoring systems it has raised many questions as to the extent 
+			that we should be monitored and to what freedoms we deserve in the technological age. Many would say that 
+			surveillance should be dialed down for their privacy, however, many others regard it as a positive move 
+			that allows us to protect citizens better and reduce the impact of digital crime.
+			</p>
+			<p>
+			This is a specific video about how monitoring workers effects truck drivers. This video shows how it can 
+			effect many people.
+			</p>
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/G_UHknhNbAQ"></iframe>
+	</div>
+	
+	<div id = 'bbar'></div>
+	
+	<div id = 'sidenav' class = 'side-nav'><!-Side navigation.->
+		<a href = 'javascript:void(0)'style='color:#fbdb1c;text-align:center;font-size:200%;'class='closebtn'onclick='closeNav()'>&times;</a><!-Close button.->
+		<a href = 'index.html'>General information</a></li>
+		<a href = 'work.html'>Computers In The Workforce</a>
+		<a href = 'auto.html'>Automated Decision Making</a>
+		<a href = 'ai.html'>Artificial Intelligence</a>
+		<a href = 'environ.html'>Environmental Effects</a>
+		<a href = 'censor.html'>Censorship & The Internet</a>
+		<a href = '#main'onclick='closeNav()'>Monitoring Behaviour</a>
+		<a href = 'persinfo.html'>Analysis of Personal Information</a>
+		<a href = 'piroff.html'>Piracy & Offensive Communications</a>
+		<a href = 'ui.html'>User Interface Design Considerations</a>
+		<a href = 'contact.html'>Contact</a>
+	</div>
+	
+	<script>
+		function openNav() {
+			document.getElementById('sidenav').style.width = '100%';
+		}
+		function closeNav() {
+			document.getElementById('sidenav').style.width = '0';
+		}
+		window.onscroll = function() {scrollFunction()}//When the user scrolls down the size of the image, the nav bar pops up.
+		function scrollFunction() {
+			if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+				document.getElementById('topnav').style = 'opacity:0.6;background-color:#222;box-shadow: 0 10px 8px 2px #888888';
+			} else{
+				document.getElementById('topnav').style = 'opacity:1';
+				document.getElementById('topnav').style = 'box-shadow:0';
+			}
+		}
+	</script>
+	
+</body>
+</html>

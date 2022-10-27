@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='CSS/workstyle.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'><!-This is the font of the website provided by Google.->
+	<title>Moral & Ethical Issues Concerning the use of Computer Technology</title>
+</head>
+
+<body>	
+	<div id = 'image'><!-This div is for the parallax effect.->
+		<div class = 'image-text'><!-Div is so there is text on the image for the title of the page.->
+		<h1 style = 'font-size: 50px'>Computers In The Workforce</h1>
+		</div>
+	</div>
+	
+	<div id = 'topnav'><!-The top navigation bar.->
+		<b onclick = 'openNav()'>&#9776;</b><!-Menu icon->
+		<a href = 'contact.html'><img style='float:right;padding-right:50px;padding-top:1%;'src='formicon.png',width='50'height='50'></a>
+	</div>
+	
+	<div id = 'main'><!-This is where all the main content goes.->
+		<div id = 'right-column'>
+			<img width='700'height='460'src='compworkforce.jpg'>
+			<h2 style='padding-top:5%'>The Data Protection Act 1998</h2>
+				<ul>
+					<li>It must be collected and used fairly and inside the law.</li>
+					<li>It must only be held and used for the reasons given to the Information Commissioner.</li>
+					<li>It can only be used for those registered purposes and only be disclosed to those people mentioned in the register entry.
+					You cannot give it away or sell it unless you said you would to begin with.</li>
+					<li>The information held must be adequate, relevant and not excessive when compared with the purpose stated in the register.
+					So you must have enough detail but not too much for the job that you are doing with the data.</li>
+					<li>It must be accurate and be kept up to date. There is a duty to keep it up to date, for example to change an address when
+					people move.</li>
+					<li>It must not be kept longer than is necessary for the registered purpose. It is alright to keep information for certain
+					lengths of time but not indefinitely. This rule means that it would be wrong to keep information about past customers longer 
+					than a few years at most.</li>
+					<li>The information must be kept safe and secure. This includes keeping the information backed up and away from any unauthorised 
+					access. It would be wrong to leave personal data open to be viewed by just anyone.</li>
+				</ul>
+		</div>
+		<h1>Computers in the Workforce</h1>
+			<p>
+			Computer technology is now a norm in the work place, and with everyday passing by at the office, workers are now 
+			represented with the risk of having illicit material on their screens as they work. Furthermore, the security of workers
+			data should be protected as companies must follow the data protection act 1998.
+			</p>
+			<iframe width="800" height="562" src="https://www.youtube.com/embed/opdc8hQN0ew"></iframe><!-Using iframe here to implement an embed YouTube video.->
+		<h2 style='padding-top:3%;'>Automation and Robotics</h2>
+			<p>Automation in the workforce is a big area in workplaces and has replaced many jobs. For example, car production.
+			Due to this, many jobs are at risk, as automation is growing and is likely to replace many jobs. Although this is a problem, 
+			automation heavily helps with time and is eventually cost effective. Despite this, there is fear that in the future all 
+			possible jobs will be replaced by robotics and that leaves us worried about the advancement of robotics and automation.</p>
+		<h2 style='padding-top:3%;'>Privacy, safety and data security</h2>
+			<p>Companies have a legal and moral obligation to protect sensitive corporate data. This may be customer or staff records, 
+			contracts, and sensitive commercial-in-confidence information.
+			Where computer use is tracked by the business, employees should be made aware and clearly advised on what is and isn’t considered 
+			ethical use of the systems.</p>
+	</div>
+	
+	<div id = 'bottom'>
+		<h2>The Importance of Computers in the Workplace</h2>
+			<p>Computers can improve communication both within the workplace and when dealing with customers. An e-mail can convey a large
+			amount of information at one time and can be viewed at the convenience of the recipient. Computers also give customers an 
+			additional method of making inquiries or receiving information.
+			</p>
+			<p>Computers can increase the speed and accuracy of many work processes, which improves overall worker efficiency. Documents 
+			can be written and edited much more quickly with the aid of a word processing program, and procedures, such as billing and 
+			accounting, can also occur more rapidly and with fewer errors. 
+			</p>
+			<p>As workplaces depend more heavily on computers, the need for paper may also increase. Reducing paper may lead to a 
+			reduction in office supply costs and open more work space that had previously been used to store paper documents in file 
+			cabinets. 
+			</p>
+			<p>However, the possibility of jobs being replaced by robots and ai is looming over us as a chance in the future. This is a 
+			huge fear as it could lead to many humans unemployed.
+			<br>Here is a video about this possibility.		
+			</p>
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/WSKi8HfcxEk"></iframe>
+	</div>
+	<div id = 'bbar'></div>
+	
+	<div id = 'sidenav' class = 'side-nav'><!-Side navigation.->
+		<a href = 'javascript:void(0)'style='color:#008baa;text-align:center;font-size:200%;'class='closebtn'onclick='closeNav()'>&times;</a><!-Close button.->
+		<a href = 'index.html'>General information</a></li>
+		<a href = '#main'onclick='closeNav()'>Computers In The Workforce</a>
+		<a href = 'auto.html'>Automated Decision Making</a>
+		<a href = 'ai.html'>Artificial Intelligence</a>
+		<a href = 'environ.html'>Environmental Effects</a>
+		<a href = 'censor.html'>Censorship & The Internet</a>
+		<a href = 'monitor.html'>Monitoring Behaviour</a>
+		<a href = 'persinfo.html'>Analysis of Personal Information</a>
+		<a href = 'piroff.html'>Piracy & Offensive Communications</a>
+		<a href = 'ui.html'>User Interface Design Considerations</a>
+		<a href = 'contact.html'>Contact</a>
+	</div>
+	
+	<script>
+		function openNav() {
+			document.getElementById('sidenav').style.width = '100%';
+		}
+		function closeNav() {
+			document.getElementById('sidenav').style.width = '0';
+		}
+		window.onscroll = function() {scrollFunction()}//When the user scrolls down the size of the image, the nav bar pops up.
+		function scrollFunction() {
+			if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+				document.getElementById('topnav').style = 'opacity:0.6;background-color:#222;box-shadow: 0 10px 8px 2px #888888';
+			} else{
+				document.getElementById('topnav').style = 'opacity:1';
+				document.getElementById('topnav').style = 'box-shadow:0';
+			}
+		}
+	</script>
+	
+</body>
+</html>
